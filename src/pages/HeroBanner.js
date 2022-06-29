@@ -28,7 +28,8 @@ const HeroBanner = () => {
                                     <p className="hero_para" data-aos={"fade-up"}  data-aos-duration="1000">Our environment, the world in which we live and work, is a mirror of our attitudes and expectations.</p>
                                 <div className="hero_btn" data-aos={"fade-up"}  data-aos-duration="4000">
                                     <button className="btn"> Shop now</button>
-                                    <span><a className="hero_link" href="" blanck="">Explore plants</a></span>
+                                    <span><a className="hero_link" data-bs-toggle="modal"
+				data-bs-target="#exampleModal" href="" blanck="">Explore plants</a></span>
                                     </div>
                                 </div>
 							</div>

@@ -7,6 +7,7 @@ import PlantStands from "./PlantStands";
 import Search from "./Search";
 import data from "./data";
 import Slider from "react-slick";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
 	const settings = {
@@ -60,9 +61,9 @@ const Home = () => {
 						</div>
 						<div className="col-6 col-lg-6">
 							<div className="featured_header_link">
-								<a href="" blanck="">
+								<NavLink exact to='featured'>
 									view all
-								</a>
+								</NavLink>
 							</div>
 						</div>
 						<Slider {...settings}>

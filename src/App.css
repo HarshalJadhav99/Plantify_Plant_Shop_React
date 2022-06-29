@@ -94,6 +94,43 @@
 	color: #eff7f5;
 	margin-left: 10%;
 }
+.m_custom_header{
+	background-color: #004f44;
+	color: #ffffff;
+}
+.hlines {
+	overflow: hidden;
+	text-align: center;
+  }
+  
+  .hlines:before,
+  .hlines:after {
+	background-color: #004f44;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+  }
+  
+  .hlines:before {
+	right: 0.5em;
+	margin-left: -50%;
+  }
+  
+  .hlines:after {
+	left: 0.5em;
+	margin-right: -50%;
+  }
+.hlines_text{
+	font-size: 20px;
+	color: #004f44;
+	margin-bottom: 15px;
+}
+.modal-content{
+	border: 0 !important;
+}
 .hero_banner_img {
 	position: relative;
 	z-index: 100px;

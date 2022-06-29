@@ -70,7 +70,7 @@ const Cart = () => {
           <div className="col-12">
           
             
-                    
+            <Scrollbars style={{height:'300px'}}>        
             <div className="container m-0">
               <div className="row">
                 {items.map((item, index) => {
@@ -126,7 +126,7 @@ const Cart = () => {
                 })}
               </div>
             </div>
-                    
+            </Scrollbars>    
           </div>
           <div className="col-12">
             <h3 style={{ textAlign: "initial" }}>

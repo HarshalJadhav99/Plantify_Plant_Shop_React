@@ -21,6 +21,8 @@ import Featured from "./pages/Featured";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import { CartProvider } from "react-use-cart";
+import Modal from "./pages/Modal";
+import AllFeatured from "./pages/AllFeatured";
 
 function App() {
 	useEffect(() => {
@@ -35,8 +37,11 @@ function App() {
 					<Route exact path="/" element={<Home />} />
 
 					<Route exact path="/cart" element={<Cart />} />
+					<Route path='/featured' element={<AllFeatured/>}/>
 				</Routes>
+				<Modal/>
 			</CartProvider>
+			
 		</div>
 	);
 }
