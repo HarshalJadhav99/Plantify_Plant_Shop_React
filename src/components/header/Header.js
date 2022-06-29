@@ -5,7 +5,19 @@ import logo2 from "./clarity_search-line.svg";
 import logo3 from "./clarity_user-line.svg";
 import logo4 from "./clarity_shopping-cart-line.svg";
 import $ from "jquery";
+import { useCart } from "react-use-cart";
+
 const Header = () => {
+	const {
+		isEmpty,
+		totalUniqueItems,
+		totalItems,
+		items,
+		cartTotal,
+		updateItemQuantity,
+		removeItem,
+		emptyCart,
+	  } = useCart();
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg custom_nav">
@@ -69,10 +81,10 @@ const Header = () => {
 									<img src={logo3} />
 								</a>
 							</li>
-							<li className="d-inline me-3 d-none d-lg-inline-block">
-								<a href="" blanck="">
-									<img src={logo4} />
-								</a>
+							<li className="d-inline nav-item me-3 d-none d-lg-inline-block">
+								<NavLink className="nav-link" to="cart" blanck="">
+									<img src={logo4} />${cartTotal}({totalItems})
+								</NavLink>
 							</li>
 						</ul>
 					</div>

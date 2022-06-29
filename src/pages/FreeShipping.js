@@ -16,7 +16,7 @@ const FreeShipping = () => {
 					<div className="container free_shipping_container">
 						<div className="row">
 							<div className="col-lg-12">
-								<img className="img-fluid" src={image13} />
+								<img className="img-fluid free_img" src={image13} />
 								<div className="free_shipping_content" data-aos={"fade-down"}  data-aos-duration="3000">
 									<h3>Free Shipping Services</h3>
 									<p className="free_p_text">*only for the same region</p>

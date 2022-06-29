@@ -18,26 +18,25 @@ import Map from "./pages/Map";
 import Search from "./pages/Search";
 import PlantStands from "./pages/PlantStands";
 import Featured from "./pages/Featured";
+import Cart from "./pages/Cart";
+import Home from "./pages/Home";
+import { CartProvider } from "react-use-cart";
+
 function App() {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
-    Aos.refresh()
+		Aos.refresh();
 	}, []);
 	return (
 		<div className="App">
-			<Header />
-			{/* <Routes>
-        <Route exact path='/' element={<Shop/>} />
-        <Route path='products' element={<Products/>}/>
-        <Route path='guide' element={<Guide/>}/>
-        <Route path='fertilizer' element={<Fertilizer/>}/>
-      </Routes> */}
-			<HeroBanner />
-			<Featured/>
-			<Search />
-			<PlantStands />
-			<FreeShipping />
-			<Map />
+			<CartProvider>
+				<Header />
+				<Routes>
+					<Route exact path="/" element={<Home />} />
+
+					<Route exact path="/cart" element={<Cart />} />
+				</Routes>
+			</CartProvider>
 		</div>
 	);
 }

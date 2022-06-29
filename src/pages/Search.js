@@ -68,7 +68,7 @@ const Search = () => {
 										</h3>
 									</div>
 								</div>
-								<div className="col-lg-3 card_img_overlay" data-aos={"fade-down"}>
+								<div className="col-md-6 col-lg-3 card_img_overlay" data-aos={"fade-down"}>
 									<div>
 										<img className="img-fluid bottom_img_overlay" src={image14} />
 									</div>
@@ -83,7 +83,7 @@ const Search = () => {
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 card_img_overlay" data-aos={"fade-up"}>
+								<div className="col-md-6 col-lg-3 card_img_overlay" data-aos={"fade-up"}>
 									<div>
 										<img className="img-fluid bottom_img_overlay" src={image15} />
 									</div>
@@ -98,7 +98,7 @@ const Search = () => {
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 card_img_overlay" data-aos={"fade-down"}>
+								<div className="col-md-6 col-lg-3 card_img_overlay" data-aos={"fade-down"}>
 									<div>
 										<img className="img-fluid bottom_img_overlay" src={image16} />
 									</div>
@@ -113,7 +113,7 @@ const Search = () => {
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 card_img_overlay" data-aos={"fade-up"}>
+								<div className="col-md-6 col-lg-3 card_img_overlay" data-aos={"fade-up"}>
 									<div>
 										<img className="img-fluid bottom_img_overlay" src={image17} />
 									</div>
