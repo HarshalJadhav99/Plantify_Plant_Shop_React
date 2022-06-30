@@ -9,7 +9,7 @@ const AllProducts = (props) => {
            <div className="col-12 col-md-6 col-lg-3 mb-5 card_space">
         <div>
             <div className="fe_card_img">
-                <img className="img-fluid" src={props.img} />
+                <img className="img-fluid w-100" src={props.img} />
             </div>
             <div>
                 <div className="fe_card_title d-flex justify-content-between">
